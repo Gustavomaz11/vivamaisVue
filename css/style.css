@@ -218,10 +218,8 @@ header {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    max-width: 412px;
     display: flex;
     align-items: center;
     gap: 25px;
