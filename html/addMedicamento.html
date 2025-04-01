@@ -15,49 +15,50 @@
 <body>
   <div id="app">
     <header>
-      <a href="index.html">
+      <a href="medicacaoDia.html">
         <i class="bi bi-chevron-left"></i>
       </a>
-      <h2>Medicação do Dia</h2>
+      <h2>Adicionar Medicamento</h2>
     </header>
     <main>
-      <div class="main-btn">
-        <button @click="trocaPagina('addMedicamento.html')">Adicionar Medicamento</button>
-        <button>Histórico de Medicamentos</button>
-        <button>Medicação SOS</button>
+      <div class="find-medicament">
+        <h2>Digite o nome do medicamento</h2>
+        <h3>Preencha o campo abaixo: </h3>
+        <div class="input-content">
+          <label for="medicamento">Nome do Medicamento: </label>
+          <input type="text" placeholder="Ex: Paracetamol">
+        </div>
+        
       </div>
       <div class="nav-card">
 
         <div class="card">
           <div class="card-header">
-            <p>Losartana</p>
-            <p>Ciclo: 1/5</p>
+            <p>Losartana Potássio 100mg 30 Comprimidos</p>
+            <i class="bi bi-chevron-right"></i>
           </div>
           <div class="card-content">
-            <p>Inicio: 09:00</p>
-            <p>Próximo Horário: 17:00</p>
+            <p>Laboratório: Medley</p>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
-            <p>Paracetamol</p>
-            <p>Ciclo: 2/5</p>
+            <p>Losartana Potássio 100mg 60 comprimidos</p>
+            <i class="bi bi-chevron-right"></i>
           </div>
           <div class="card-content">
-            <p>Inicio: 07:00</p>
-            <p>Próximo Horário: 15:00</p>
+            <p>Laboratório: CIMED</p>
           </div>
         </div>
 
         <div class="card">
           <div class="card-header">
-            <p>Paracetamol</p>
-            <p>Ciclo: 2/5</p>
+            <p>Losartana Potássio 50mg 30 comprimidos</p>
+            <i class="bi bi-chevron-right"></i>
           </div>
           <div class="card-content">
-            <p>Inicio: 07:00</p>
-            <p>Próximo Horário: 15:00</p>
+            <p>Laboratório: Aché</p>
           </div>
         </div>
 

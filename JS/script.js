@@ -4,8 +4,8 @@ const vm = new Vue({
         
     },
     methods: {
-        medicacaoDia() {
-            window.location.href = 'medicacaoDia.html'
+        trocaPagina(pagina) {
+            window.location.href = pagina
         }
     }
 })
