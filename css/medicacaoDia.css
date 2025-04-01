@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --corVerde: #2fc72f;
+  --corVermelho: #ef4747;
+  --corLembrete: #dfe9ed;
+}
+
+
+body {
+  height: 100vh;
+  max-width: 412px;
+  background-color: #f3d9d9;
+}
+
+
+#app {
+  height: 100%;
+  max-width: 412px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--corVermelho);
+  font-weight: bold;
+  padding: 2rem 2rem;
+  background-color: var(--corLembrete);
+  -webkit-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+}
+
+header a i {
+  color: var(--corVermelho);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-btn {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-btn button {
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--corLembrete);
+  color: var(--corVermelho);
+  font-weight: bold;
+  font-size: 1.25rem;
+  -webkit-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+}
+
+.nav-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95px;
+  margin: 1rem 2rem;
+  padding: .75rem;
+  border-radius: 15px;
+  background-color: var(--corLembrete);
+  -webkit-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  -moz-box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+  box-shadow: 0px 4px 33px 0px rgba(204,204,204,1);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--corVermelho);
+  font-weight: bold;
+}
+
+.card-content {
+  color: var(--corVermelho);
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: space-around;
+  border-top: 2px solid #222;
+  padding: 1rem 2rem;
+  height: 100px;
+}
+
+footer button {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background-color: transparent;
+  color: #222;
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1;
+}
+
+footer button i {
+  font-size: 45px;
+}
