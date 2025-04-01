@@ -14,11 +14,14 @@
 body {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 #app {
     height: 100%;
     max-width: 412px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 header {
@@ -229,6 +232,9 @@ footer {
     border-top: 2px solid #222;
     padding: 1rem 2rem;
     height: 100px;
+    position: fixed;
+    bottom: 0;
+    background-color: #fff;
 }
 
 footer button {
@@ -245,4 +251,295 @@ footer button {
 
 footer button i {
     font-size: 45px;
+}
+
+/* Responsividade para diversos tamanhos de celulares */
+
+/* Telas muito pequenas (até 320px - iPhone SE, antigos) */
+@media screen and (max-width: 320px) {
+    #app {
+        max-width: 100%;
+    }
+    
+    header {
+        padding: 1rem;
+    }
+    
+    .header-top {
+        font-size: 20px;
+    }
+    
+    .header-top i {
+        font-size: 24px;
+    }
+    
+    .profileSection img {
+        height: 50px;
+    }
+    
+    .container {
+        margin: 0rem 1rem;
+        height: 130px;
+    }
+    
+    .timePicker p {
+        font-size: 20px;
+    }
+    
+    .timePicker i {
+        font-size: 22px;
+    }
+    
+    .section-btn {
+        gap: 10px;
+    }
+    
+    .green-btn, .red-btn {
+        font-size: 14px;
+        padding: 0.75rem 0.2rem;
+    }
+    
+    .action-btn {
+        margin: 1.5rem 1rem;
+    }
+    
+    .btn button {
+        height: 140px;
+        font-size: 18px;
+    }
+    
+    .progress {
+        height: 140px;
+        font-size: 18px;
+    }
+    
+    .porcentagem {
+        border-width: 8px;
+        padding: 1rem;
+        height: 90px;
+    }
+    
+    .btn button i {
+        font-size: 48px;
+    }
+    
+    footer {
+        padding: 0.5rem 1rem;
+        height: 80px;
+    }
+    
+    footer button {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+    
+    footer button i {
+        font-size: 32px;
+    }
+}
+
+/* Telas pequenas (321px a 375px - iPhone X, 11 Pro, 12 mini) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    #app {
+        max-width: 100%;
+    }
+    
+    header {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .container {
+        margin: 0rem 1.5rem;
+        height: 140px;
+    }
+    
+    .action-btn {
+        margin: 1.75rem 1.5rem;
+    }
+    
+    .btn button {
+        height: 160px;
+    }
+    
+    .progress {
+        height: 160px;
+    }
+    
+    footer {
+        padding: 0.75rem 1.5rem;
+        height: 90px;
+    }
+    
+    footer button i {
+        font-size: 40px;
+    }
+}
+
+/* Telas médias (376px a 414px - iPhone 12, 13, Plus models) */
+@media screen and (min-width: 376px) and (max-width: 414px) {
+    #app {
+        max-width: 100%;
+    }
+}
+
+/* Telas grandes (415px a 480px - Alguns Android) */
+@media screen and (min-width: 415px) and (max-width: 480px) {
+    #app {
+        max-width: 100%;
+    }
+    
+    .container {
+        height: 160px;
+    }
+    
+    .btn button {
+        height: 190px;
+    }
+    
+    .progress {
+        height: 190px;
+    }
+    
+    .porcentagem {
+        height: 125px;
+    }
+    
+    footer {
+        max-width: 100%;
+    }
+}
+
+/* Dispositivos muito grandes (481px a 768px - Tablets pequenos, celulares grandes) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #app {
+        max-width: 500px;
+    }
+    
+    .header-top {
+        font-size: 28px;
+    }
+    
+    .header-top i {
+        font-size: 36px;
+    }
+    
+    .profileSection img {
+        height: 80px;
+    }
+    
+    .container {
+        height: 170px;
+    }
+    
+    .timePicker p {
+        font-size: 28px;
+    }
+    
+    .timePicker i {
+        font-size: 32px;
+    }
+    
+    .green-btn, .red-btn {
+        font-size: 20px;
+        padding: 1.25rem 0.5rem;
+    }
+    
+    .btn button {
+        height: 200px;
+        font-size: 24px;
+    }
+    
+    .progress {
+        height: 200px;
+        font-size: 24px;
+    }
+    
+    .porcentagem {
+        border-width: 12px;
+        padding: 1.75rem;
+        height: 130px;
+    }
+    
+    .btn button i {
+        font-size: 72px;
+    }
+    
+    footer {
+        max-width: 500px;
+        height: 110px;
+    }
+    
+    footer button {
+        font-size: 18px;
+    }
+    
+    footer button i {
+        font-size: 50px;
+    }
+}
+
+/* Ajustes para orientação landscape */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    #app {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 100px;
+    }
+    
+    .container {
+        height: 120px;
+    }
+    
+    .btn {
+        flex-direction: row;
+    }
+    
+    .btn button, .progress {
+        height: 120px;
+    }
+    
+    .porcentagem {
+        height: 80px;
+        padding: 1rem;
+    }
+    
+    .btn button i {
+        font-size: 40px;
+        margin-top: 0;
+    }
+    
+    footer {
+        height: 80px;
+    }
+    
+    footer button i {
+        font-size: 32px;
+    }
+}
+
+/* Ajustes para telas de alta densidade (retina) */
+@media screen and (-webkit-min-device-pixel-ratio: 2), 
+       screen and (min-resolution: 192dpi) {
+    .porcentagem {
+        border-width: 5px;
+    }
+}
+
+/* Ajustes para notch e safe area em iPhones modernos */
+@supports (padding-top: env(safe-area-inset-top)) {
+    #app {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+    }
+    
+    footer {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
 }

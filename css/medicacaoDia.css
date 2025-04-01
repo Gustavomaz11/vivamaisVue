@@ -11,17 +11,19 @@
   --corLembrete: #dfe9ed;
 }
 
-
 body {
   height: 100vh;
   max-width: 412px;
   background-color: #f3d9d9;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
-
 
 #app {
   height: 100%;
   max-width: 412px;
+  width: 100%;
+  padding-bottom: 100px; /* Espaço para o footer */
 }
 
 header {
@@ -118,6 +120,7 @@ footer {
   border-top: 2px solid #222;
   padding: 1rem 2rem;
   height: 100px;
+  background-color: #f3d9d9;
 }
 
 footer button {
@@ -227,4 +230,343 @@ footer button i {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+/* Responsividade para diversos tamanhos de celulares */
+
+/* Telas muito pequenas (até 320px - iPhone SE, antigos) */
+@media screen and (max-width: 320px) {
+  body, #app, footer {
+    max-width: 100%;
+  }
+  
+  header {
+    padding: 1.5rem 1rem;
+  }
+  
+  header a i {
+    font-size: 22px;
+  }
+  
+  .main-btn {
+    padding: 1rem;
+  }
+  
+  .main-btn button {
+    padding: 1.25rem;
+    font-size: 1rem;
+  }
+  
+  .card {
+    margin: 0.75rem 1rem;
+    height: 85px;
+    padding: 0.5rem;
+  }
+  
+  .card-header i {
+    font-size: 24px;
+  }
+  
+  .find-medicament {
+    height: 180px;
+    margin: 0.75rem 1rem;
+    padding: 0.75rem;
+  }
+  
+  .find-medicament h2 {
+    font-size: 18px;
+  }
+  
+  .find-medicament h3 {
+    font-size: 16px;
+  }
+  
+  .input-content label {
+    font-size: 16px;
+  }
+  
+  .input-content input {
+    padding: 0.75rem;
+  }
+  
+  .medicament-details {
+    margin: 0.75rem 1rem;
+    padding: 0.75rem;
+    height: 230px;
+  }
+  
+  .details-content {
+    font-size: 16px;
+  }
+  
+  .medicament-details button {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  
+  .card-details {
+    font-size: 1.2rem;
+    height: 110px;
+  }
+  
+  .nav-card button {
+    margin: 0.75rem 1rem;
+    padding: 0.75rem;
+  }
+  
+  footer {
+    padding: 0.5rem 1rem;
+    height: 80px;
+    gap: 15px;
+  }
+  
+  footer button {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+  
+  footer button i {
+    font-size: 35px;
+  }
+}
+
+/* Telas pequenas (321px a 375px - iPhone X, 11 Pro, 12 mini) */
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  body, #app, footer {
+    max-width: 100%;
+  }
+  
+  header {
+    padding: 1.75rem 1.5rem;
+  }
+  
+  .main-btn {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .card {
+    margin: 0.8rem 1.5rem;
+  }
+  
+  .find-medicament {
+    margin: 0.8rem 1.5rem;
+  }
+  
+  .medicament-details {
+    margin: 0.8rem 1.5rem;
+  }
+  
+  .nav-card button {
+    margin: 0.8rem 1.5rem;
+  }
+  
+  footer {
+    padding: 0.75rem 1.5rem;
+    height: 90px;
+  }
+  
+  footer button i {
+    font-size: 40px;
+  }
+}
+
+/* Telas médias (376px a 414px - iPhone 12, 13, Plus models) */
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  body, #app, footer {
+    max-width: 100%;
+  }
+}
+
+/* Telas grandes (415px a 480px - Alguns Android) */
+@media screen and (min-width: 415px) and (max-width: 480px) {
+  body, #app, footer {
+    max-width: 100%;
+  }
+  
+  .main-btn button {
+    font-size: 1.3rem;
+  }
+  
+  .card-header i {
+    font-size: 30px;
+  }
+  
+  .find-medicament h2 {
+    font-size: 22px;
+  }
+  
+  .find-medicament h3 {
+    font-size: 19px;
+  }
+  
+  .input-content label {
+    font-size: 19px;
+  }
+  
+  .details-content {
+    font-size: 19px;
+  }
+  
+  .medicament-details button {
+    font-size: 19px;
+  }
+}
+
+/* Dispositivos muito grandes (481px a 768px - Tablets pequenos, celulares grandes) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    max-width: 500px;
+  }
+  
+  #app, footer {
+    max-width: 500px;
+  }
+  
+  header {
+    padding: 2.25rem 2.5rem;
+  }
+  
+  header a i {
+    font-size: 28px;
+  }
+  
+  .main-btn {
+    padding: 1.75rem 2.5rem;
+  }
+  
+  .main-btn button {
+    padding: 1.75rem;
+    font-size: 1.4rem;
+  }
+  
+  .card {
+    margin: 1.2rem 2.5rem;
+    height: 105px;
+    padding: 1rem;
+  }
+  
+  .card-header i {
+    font-size: 32px;
+  }
+  
+  .find-medicament {
+    height: 220px;
+    margin: 1.2rem 2.5rem;
+    padding: 1.25rem;
+  }
+  
+  .find-medicament h2 {
+    font-size: 24px;
+  }
+  
+  .find-medicament h3 {
+    font-size: 20px;
+  }
+  
+  .input-content label {
+    font-size: 20px;
+    margin-left: .4rem;
+  }
+  
+  .input-content input {
+    padding: 1.25rem;
+  }
+  
+  .medicament-details {
+    margin: 1.2rem 2.5rem;
+    padding: 1.25rem;
+    height: 270px;
+  }
+  
+  .details-content {
+    font-size: 20px;
+  }
+  
+  .medicament-details button {
+    padding: 1rem;
+    font-size: 20px;
+  }
+  
+  .card-details {
+    font-size: 1.5rem;
+    height: 130px;
+  }
+  
+  .card-details select, .card-details input {
+    padding: .75rem;
+  }
+  
+  .nav-card button {
+    margin: 1.2rem 2.5rem;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Ajustes para orientação landscape */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  #app {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 80px;
+  }
+  
+  header {
+    padding: 1rem 2rem;
+  }
+  
+  .main-btn {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .main-btn button {
+    padding: 1rem;
+    flex: 1 0 45%;
+  }
+  
+  .card {
+    height: 80px;
+    margin: 0.5rem 2rem;
+  }
+  
+  .find-medicament {
+    height: auto;
+    padding: 0.75rem;
+    margin: 0.5rem 2rem;
+  }
+  
+  .medicament-details {
+    height: auto;
+    min-height: 200px;
+    margin: 0.5rem 2rem;
+  }
+  
+  footer {
+    height: 70px;
+    padding: 0.5rem 2rem;
+  }
+  
+  footer button i {
+    font-size: 30px;
+  }
+}
+
+/* Ajustes para notch e safe area em iPhones modernos */
+@supports (padding-top: env(safe-area-inset-top)) {
+  #app {
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  
+  footer {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
